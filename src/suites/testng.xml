@@ -15,7 +15,7 @@
             </run>
         </groups>
         <classes>
-            <class name="com.api.tests.DemoLoginAPITest"/>
+            <class name="com.api.tests.Authentication.SignupTest"/>
 <!--            <class name="com.api.tests.UserTest"/>-->
         </classes>
     </test>

@@ -1,4 +1,4 @@
-package com.api.base;
+package com.api.service.base;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -26,6 +26,10 @@ public class BaseService {
 
     protected Response postRequest(Object payload, String endpoint){
         return requestSpecification.contentType(ContentType.JSON).body(payload).post(endpoint);
+    }
+
+    protected Response putRequest(Object payload, String endpoint){
+        return requestSpecification.contentType(ContentType.JSON).body(payload).put(endpoint);
     }
 
     protected Response getRequest(String endpoint){

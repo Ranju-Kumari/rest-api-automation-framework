@@ -1,6 +1,4 @@
-package com.api.pojo.responses;
-
-import io.restassured.response.Response;
+package com.api.pojo.responses.authentication;
 
 import java.util.List;
 

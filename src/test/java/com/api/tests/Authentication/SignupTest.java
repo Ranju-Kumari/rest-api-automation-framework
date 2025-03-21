@@ -1,8 +1,9 @@
 package com.api.tests.Authentication;
 
-import com.api.base.authentication.AuthService;
+import com.api.service.authentication.AuthService;
 import com.api.pojo.requests.authentication.SignupRequest;
 import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class SignupTest {
@@ -20,6 +21,7 @@ public class SignupTest {
 
         AuthService authService = new AuthService();
         Response response = authService.signup(signupRequest);
-        System.out.println(response.asPrettyString());
+        Assert.assertEquals(response.asPrettyString(),"User registered successfully!");
+
     }
 }

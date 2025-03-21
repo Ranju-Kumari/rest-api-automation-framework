@@ -67,6 +67,8 @@ public class SignupRequest {
         this.mobilenumber = mobilenumber;
     }
 
+    //Note: Builder Design pattern is achieved with the help of inner class in Java.
+    // And inner class are static in nature
     public static class Builder{
         private String username;
         private String password;

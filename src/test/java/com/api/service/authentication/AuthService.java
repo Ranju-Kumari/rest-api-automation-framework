@@ -1,6 +1,6 @@
-package com.api.base.authentication;
+package com.api.service.authentication;
 
-import com.api.base.BaseService;
+import com.api.service.base.BaseService;
 import com.api.pojo.requests.authentication.LoginRequest;
 import com.api.pojo.requests.authentication.SignupRequest;
 import io.restassured.response.Response;

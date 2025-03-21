@@ -1,4 +1,4 @@
-package com.api.pojo.responses;
+package com.api.pojo.responses.userManagement;
 
 public class UserManagementResponse {
 
