@@ -54,6 +54,8 @@ public class UserManagementTests {
 
         response = userManagementService.updateProfile(loginResponse.getToken(),updateProfileRequest);
         System.out.println(response.asPrettyString());
+        UserManagementResponse userManagementResponse = response.as(UserManagementResponse.class);
+        Assert.assertEquals(userManagementResponse.getUsername(),"ranju999");
         System.out.println("--------------------------------------------------------------");
 
     }
